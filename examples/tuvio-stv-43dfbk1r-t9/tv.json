@@ -1,0 +1,6 @@
+{
+  "tv": "TUVIO STV-43DFBK1R-T9 (ST4251B052V, MediaTek)",
+  "os": "Android TV 11",
+  "brand": "TUVIO",
+  "notes": "Yandex TV platform (Yandex Home), ad/bug report/screensaver/stub and optional Alice/Browser/Music disabled, Yandex Home disabled after com.gathin.tvhome set and reboot; Yandex Store kept but dock tile remapped to Live TV; Inputs pill opens Yandex source picker directly; Sweden wallpapers overlay"
+}
