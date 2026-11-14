@@ -1,0 +1,31 @@
+{
+  "dock_apps": [
+    "ru.ivi.client",
+    "ru.more.play",
+    "su.happ.proxyutility",
+    "com.yandex.tv.ytplayer",
+    "ru.kinopoisk.tv",
+    "mobi.zona",
+    "com.yandex.devices.appstore"
+  ],
+  "columns": 7,
+  "app_labels": [
+    "com.yandex.devices.appstore=ТВ каналы"
+  ],
+  "launch_actions": [
+    "com.yandex.devices.appstore=input:com.yandex.tv.input.efir/com.yandex.tv.live.efir.rich.RichTvInputService"
+  ],
+  "live_tv_package": "",
+  "input_action": "com.yandex.tv.live/.input.SourceActivity",
+  "source_panel_service": "com.yandex.tv.live/.input.SourceActivity",
+  "source_panel_action": "",
+  "wallpaper": true,
+  "wallpaper_rotation_minutes": 60,
+  "wallpaper_order": "sequential",
+  "wallpaper_captions": true,
+  "dock_glass": true,
+  "dock_opacity": 40,
+  "dock_even_padding": true,
+  "wifi_status_color": true,
+  "wifi_status_warnings": true
+}
