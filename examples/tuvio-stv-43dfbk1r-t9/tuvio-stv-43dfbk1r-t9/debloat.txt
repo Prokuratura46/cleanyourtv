@@ -1,0 +1,36 @@
+# TUVIO STV-43DFBK1R-T9 (STV-43DFBK1R-T9.ST4251B052V), TUVIO, Android TV 11 (SDK 30),
+# build RP1A.200720.011 (dev-keys). Yandex TV platform (Yandex Home / Яндекс ТВ).
+#
+# Apply:   TV_HOST=<tv ip> tools/disable.sh examples/tuvio-stv-43dfbk1r-t9/debloat.txt
+# Undo:    TV_HOST=<tv ip> tools/restore.sh examples/tuvio-stv-43dfbk1r-t9/debloat.txt com.yandex.tv.home
+# Everything is DISABLED, not uninstalled. Comment out any line you want to keep.
+#
+# Kept on purpose:
+#   com.yandex.tv.live, com.yandex.tv.input.efir, com.mediatek.tvinput: Live TV / tuner / HDMI / AV inputs.
+#   com.yandex.tv.services*, com.yandex.tv.settings, com.yandex.tv.setupwizard, com.yandex.tv.vendor.config,
+#   ru.yandex.androidkeyboard.tv and the rest of the Yandex/MediaTek TV stack.
+#   com.yandex.launcher.updaterapp: updates Yandex TV apps where there is no Play Store flow for them.
+#   ru.ivi.client, ru.more.play (Okko), com.yandex.tv.ytplayer and other apps the household uses.
+#   com.yandex.devices.appstore: could not be disabled (protected package on this set); left enabled and
+#   repurposed in the launcher dock to open Live TV (launch_actions).
+#   com.mediatek.androidbox (WFDSink/Miracast/KindLink): left enabled to avoid breaking casting.
+#   Firmware updater packages and factory/test packages were not touched.
+#
+# Tested on one set in this session (Wi-Fi, no HDMI/AV devices connected). After debloat, com.gathin.tvhome
+# was installed and set as Home, the TV rebooted and came back to it, then com.yandex.tv.home was disabled.
+# Re-verified after a reboot and a power-cycle: Home stayed com.gathin.tvhome. Physical HDMI/AV switching
+# was not tested with devices attached.
+
+# Yandex telemetry and leftovers
+com.yandex.android.advid               # Yandex advertising ID
+com.yandex.tv.bugreportsender          # bug report sender
+com.yandex.tv.daydream                 # Yandex screensaver
+com.yandex.prebuiltstub                # empty stub
+
+# Optional Yandex apps disabled on this set by choice
+com.yandex.tv.alice                    # Alice voice assistant
+com.yandex.browser.tv                  # Yandex Browser
+com.yandex.tv.music                    # Yandex Music
+
+# Stock Home, last: only after the new launcher is Home and survived a reboot
+com.yandex.tv.home                     # Yandex TV Home
